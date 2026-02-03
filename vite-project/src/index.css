@@ -5,11 +5,11 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #e43258;
 
   /* layout variables moved here so App.css can be removed */
   --max-w: 1280px;
-  --bg: #ffffff;
+  --bg: #e7adad;
   --muted: #888;
   --nav-height: 64px; /* used by the fixed navbar */
   --footer-height: 56px; /* used by the fixed footer */

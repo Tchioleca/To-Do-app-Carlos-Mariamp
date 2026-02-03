@@ -1,4 +1,4 @@
-// this is where the main structure of the HOME PAGE is coded
+// this is where the main structure of the HOME PAGE is coded(From here it is linked to main.jsx to keep thing readable...)
 // cleaned the original boillerplate code
 // this is where the main scruture of the page is coded (where the components are being loaded)
 // test 22
