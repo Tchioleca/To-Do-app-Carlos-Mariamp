@@ -6,9 +6,9 @@ export default function Navbar() {
       <div className="nav-inner">
         <div className="brand">To-Do App</div>
         <nav className="nav-links" role="navigation">
-          <a href="#">Home</a>
-          <a href="#">Tasks</a>
-          <a href="#">About</a>
+          <a href="#home">Home</a>
+          <a href="#tasks">Tasks</a>
+          <a href="#about">About</a>
         </nav>
       </div>
     </header>

@@ -1,9 +1,46 @@
+/*here is where the css is being changed to display the elements on the home page,
+so make changes to the css here(everything in RED)*/
+
+.app-root {
+  min-height: 100vh;
+  background: var(--bg);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+}
+
+.app-container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1rem;
+  grid-template-areas: "sidebar main";
+  padding: 1rem;
+  /* ensure content isn't hidden by the fixed footer; add a small buffer */
+  padding-bottom: calc(var(--footer-height, 56px) + 1rem);
+  /* offset for the fixed navbar at the top */
+  padding-top: calc(var(--nav-height, 64px) + 0.5rem);
+}
+
+@media (max-width: 700px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+    padding: 0.75rem;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
 .home {
   grid-area: main;
   padding: 1.5rem;
 }
 .hero {
-  background: linear-gradient(90deg,#eef5ff,#f8fbff);
+  background-color: #f31111;
   padding: 1rem;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -17,5 +54,32 @@
   padding: 1rem;
   border: 1px solid #e6eef8;
   border-radius: 6px;
-  background: #fff;
+  background: #f31111;
 }
+
+/* Tasks and About */
+.tasks {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #e6eef8;
+  border-radius: 6px;
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+.task {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #eef5ff;
+}
+.muted {
+  color: #657786;
+}
+.about {
+  margin: 1rem 0;
+  padding: 1rem;
+  color: #0b1220;
+}
+

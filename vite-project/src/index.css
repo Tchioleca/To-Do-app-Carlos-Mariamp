@@ -7,6 +7,13 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  /* layout variables moved here so App.css can be removed */
+  --max-w: 1280px;
+  --bg: #ffffff;
+  --muted: #888;
+  --nav-height: 64px; /* used by the fixed navbar */
+  --footer-height: 56px; /* used by the fixed footer */
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,6 +35,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+/* enable smooth in-page navigation */
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -52,6 +64,35 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* moved from App.css */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
 @media (prefers-color-scheme: light) {
