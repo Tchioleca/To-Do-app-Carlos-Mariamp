@@ -1,0 +1,21 @@
+.sidebar {
+  grid-area: sidebar;
+  background: #f7f9fc;
+  padding: 1rem;
+  border-right: 1px solid #e6eef8;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin: 0.5rem 0;
+}
+.sidebar a {
+  color: #0b1220;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}

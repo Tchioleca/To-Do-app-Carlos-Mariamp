@@ -1,0 +1,21 @@
+.home {
+  grid-area: main;
+  padding: 1.5rem;
+}
+.hero {
+  background: linear-gradient(90deg,#eef5ff,#f8fbff);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.example-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 1rem;
+}
+.card {
+  padding: 1rem;
+  border: 1px solid #e6eef8;
+  border-radius: 6px;
+  background: #fff;
+}
