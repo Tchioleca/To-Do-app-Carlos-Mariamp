@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #e43258;
+  background-color: #3e10be;
 
   /* layout variables moved here so App.css can be removed */
   --max-w: 1280px;

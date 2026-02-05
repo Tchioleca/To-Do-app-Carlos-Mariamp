@@ -3,7 +3,7 @@ so make changes to the css here(everything in RED)*/
 
 .app-root {
   min-height: 100vh;
-  background: var(--bg);
+  background: rgb(80, 174, 237);
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
@@ -17,7 +17,7 @@ so make changes to the css here(everything in RED)*/
   grid-template-columns: 240px 1fr;
   gap: 1rem;
   grid-template-areas: "sidebar main";
-  padding: 1rem;
+  padding: 0.5rem;
   /* ensure content isn't hidden by the fixed footer; add a small buffer */
   padding-bottom: calc(var(--footer-height, 56px) + 1rem);
   /* offset for the fixed navbar at the top */
@@ -40,10 +40,15 @@ so make changes to the css here(everything in RED)*/
   padding: 1.5rem;
 }
 .hero {
-  background-color: #f31111;
-  padding: 1rem;
+  /*background-color: #FF7E6B; */
+  padding: 0.5rem;
   border-radius: 6px;
   margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: block;
+  font-style: italic;
+  color: #101010;
+
 }
 .example-cards {
   display: grid;
@@ -52,17 +57,19 @@ so make changes to the css here(everything in RED)*/
 }
 .card {
   padding: 1rem;
-  border: 1px solid #e6eef8;
+  border: 1px solid #e7eaed;
   border-radius: 6px;
-  background: #f31111;
+  /*background: #FF7E6B; */
+  background: white
 }
 
 /* Tasks and About */
 .tasks {
   margin: 1rem 0;
-  padding: 1rem;
-  background: #fff;
-  border: 1px solid #e6eef8;
+  padding: 0.2rem;
+  /*background: #FF7E6B; */
+  background: white;
+  border: 1px solid #e5e8eb;
   border-radius: 6px;
 }
 .task-list {
@@ -75,11 +82,12 @@ so make changes to the css here(everything in RED)*/
   border-bottom: 1px dashed #eef5ff;
 }
 .muted {
-  color: #657786;
+  color: #04101a;
 }
 .about {
   margin: 1rem 0;
   padding: 1rem;
-  color: #0b1220;
+  color: #101010;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
