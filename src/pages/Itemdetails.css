@@ -1,0 +1,56 @@
+h1 {
+  color: #ff6b9d;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.task-detail {
+  margin: 1.5rem 0;
+  padding: 2rem;
+  background: rgba(42, 42, 62, 0.3);
+  border: 1px solid rgba(224, 82, 121, 0.2);
+  border-radius: 12px;
+  color: #ffffff;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(224, 82, 121, 0.1), inset 0 1px 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.task-detail-item {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(42, 42, 62, 0.3);
+  border-left: 4px solid #e05279;
+  border: 1px solid rgba(224, 82, 121, 0.2);
+  border-left: 4px solid #e05279;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(224, 82, 121, 0.08), inset 0 1px 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.task-detail-label {
+  font-weight: 600;
+  color: #ff6b9d;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.task-detail-value {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.task-not-found {
+  padding: 2rem;
+  background: rgba(196, 30, 58, 0.15);
+  border: 1px solid rgba(196, 30, 58, 0.3);
+  border-radius: 8px;
+  color: #ff6b9d;
+  font-size: 1.1rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.1);
+}

@@ -1,0 +1,126 @@
+.navbar {
+  grid-area: header;
+  background: rgba(192, 200, 192, 0.4);
+  color: #221b15;
+  height: auto;
+  min-height: var(--nav-height, 64px);
+  padding: 0 1rem;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+
+  backdrop-filter: saturate(120%) blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(180, 159, 139, 0.12);
+  border-bottom: 1px solid rgba(180, 159, 139, 0.2);
+}
+.nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.brand {
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.3rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #221b15;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #ff7b00;
+}
+
+.navbar-tasks {
+  border-top: 1px solid rgba(180, 159, 139, 0.15);
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+  width: 100%;
+  max-height: 120px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-tasks h4 {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #351b02;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0;
+}
+
+.navbar-task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar-task-list li {
+  font-size: 0.85rem;
+  color: #221b15;
+  padding: 0.25rem 0.5rem;
+  background: rgba(180, 159, 139, 0.15);
+  border-radius: 4px;
+  border: 1px solid rgba(180, 159, 139, 0.2);
+  backdrop-filter: blur(6px);
+  transition: all 0.2s;
+}
+
+.navbar-task-list li:hover {
+  background: rgba(180, 159, 139, 0.25);
+  border-color: rgba(180, 159, 139, 0.4);
+}
+
+.task-indicator {
+  color: #b49f8b;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Scrollbar styling for task list */
+.navbar-tasks::-webkit-scrollbar {
+  width: 8px;
+}
+
+.navbar-tasks::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.navbar-tasks::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 4px;
+}
+
+.navbar-tasks::-webkit-scrollbar-thumb:hover {
+  background: #ffb300;
+}
+
+/* DONT CHANGE THIS PART HERE : ensure content below doesn't get covered by fixed nav on small screens */
+@media (max-width: 700px) {
+  .navbar-tasks {
+    display: none;
+  }
+}

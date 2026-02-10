@@ -1,0 +1,43 @@
+.footer {
+  grid-area: footer;
+  background: rgba(192, 200, 192, 0.3);
+  color: #221b15;
+  font-size: 0.9rem;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  width: 100vw;
+
+  min-height: var(--footer-height, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: saturate(120%) blur(12px);
+  box-shadow: 0 -8px 32px rgba(180, 159, 139, 0.12);
+  border-top: 1px solid rgba(180, 159, 139, 0.2);
+}
+.footer-inner {
+  max-width: var(--max-w);
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a {
+  color: #b49f8b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer a:hover {
+  color: #303022;
+}
+
+cd vite-project
+npm run dev
+
