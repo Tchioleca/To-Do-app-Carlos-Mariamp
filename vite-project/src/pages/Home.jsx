@@ -25,9 +25,14 @@ export default function Home() {
 
           <section id="tasks" className="tasks">
             <h3>Your Tasks</h3>
-            <p className="muted">No tasks yet — add one to get started.</p>
             <ul className="task-list">
-              <li className="task">Example task — <em>click to edit</em></li>
+          <li className="task">Read the Project brief</li>
+          <li class="task">Create a project repository</li>
+          <li class="task">Create React application using Vite</li>
+          <li class="task">Finish Day 1 Development Tasks</li>
+          <li class="task">Finish Day 1 Research Tasks</li>
+          <li class="task">Finish Day 2 Development Tasks</li>
+          <li class="task">Finish Day 2 Research Tasks</li>
             </ul>
           </section>
 
