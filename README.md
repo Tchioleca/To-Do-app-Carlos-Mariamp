@@ -1,16 +1,73 @@
-# React + Vite
+# To-Do App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple to-do application built with React and Vite.  
+This project demonstrates core React concepts such as components, state management, routing, and basic layout structure.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Add new tasks
+- View a list of tasks
+- Mark tasks as completed
+- View task details on a separate page
+- Basic layout with Navbar, Sidebar, and Footer
+- Client-side routing using React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router DOM
+- CSS (no framework)
+
+---
+
+## Project Structure
+
+src/
+├─ components/ Reusable UI components
+├─ pages/ Route-level views
+├─ data/ Static mock task data
+├─ App.jsx Application layout and routes
+├─ main.jsx Application entry point
+└─ index.css Global styles
+
+src/
+├─ components/ Reusable UI components
+├─ pages/ Route-level views
+├─ data/ Static mock task data
+├─ App.jsx Application layout and routes
+├─ main.jsx Application entry point
+└─ index.css Global styles
+
+
+## Routes
+
+- / — Home page
+- /dashboard — Task list
+- /tasks/:id — Task details
+- /about — About page
+
+## Purpose
+
+This project was built as a learning and demonstration project to showcase foundational React skills in a realistic setup. It is intentionally kept simple to highlight structure, data flow, and best practices without relying on external libraries or frameworks.
+
+## Future Improvements
+
+- Persist tasks using localStorage
+- Add task filtering (All / Active / Completed)
+- Improve accessibility and keyboard navigation
+- Enhance mobile responsiveness
+- Add basic unit and component tests
+
+## Author
+
+Carlos and Mariam  
+
+
+## License
+
+This project is intended for educational and demonstration purposes.
